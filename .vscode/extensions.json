@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "lokalise.i18n-ally",
+    "mikestead.dotenv",
+    "Tobermory.es6-string-html",
+    "zjcompt.es6-string-javascript",
+    "dbaeumer.vscode-eslint",
+    "antfu.goto-alias",
+    "kavod-io.vscode-jest-test-adapter",
+    "esbenp.prettier-vscode",
+    "hbenl.vscode-test-explorer",
+    "Gruntfuggly.todo-tree"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "i18n-ally.enabledFrameworks": ["react-i18next"],
+  "i18n-ally.localesPaths": ["src/i18n/resources"],
+  "i18n-ally.keystyle": "flat",
+  "i18n-ally.displayLanguage": "ko",
+  "i18n-ally.sourceLanguage": "ko-KR",
+  "i18n-ally.enabledParsers": ["ts", "json"],
+  "cSpell.words": ["Appstore", "Immer", "Paas", "Sider", "svgs", "webp", "Swiper"],
+  // TODO TREE Setting
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "alert",
+    "type": "text",
+    "foreground": "white",
+    "background": "black",
+    "opacity": 50,
+    "iconColour": "white",
+    "gutterIcon": true
+  },
+  "todo-tree.general.tags": ["!TODO", "!FIXME", "!DELETE", "!SEE", "!HOLD"],
+  // https://microsoft.github.io/vscode-codicons/dist/codicon.html
+  "todo-tree.highlights.customHighlight": {
+    // 개선이 필요하거나 미래에 무엇인가 작업이 필요한 경우
+    "!TODO": {
+      "icon": "rocket",
+      "iconColour": "#0A80FF",
+      "background": "#0A80FF"
+    },
+    // 문제가 있는것이 확실하지만, 그걸 지금 당장 그것을 수정할 필요는 없을 때
+    "!FIXME": {
+      "icon": "alert",
+      "iconColour": "crimson",
+      "background": "crimson"
+    },
+    // 임시작성 코드, 미래에 제거되어야 하는 코드
+    "!DELETE": {
+      "icon": "trash",
+      "foreground": "black",
+      "background": "grey"
+    },
+    // 참고할 레퍼런스 정보
+    "!SEE": {
+      "icon": "archive",
+      "iconColour": "olive",
+      "background": "olive"
+    },
+    // 1차 오픈 제외로 임시 주석
+    "!HOLD": {
+      "icon": "tag",
+      "iconColour": "white",
+      "background": "gray"
+    }
+  }
+}
