@@ -1,5 +1,11 @@
 {
-    let todoItems: {id: number, title: string, done: boolean}[];
+    type todoType = {
+        id: number,
+        title: string,
+        done: boolean
+    };
+
+    let todoItems: todoType[];
   
     // api
     function fetchTodoItems() {
@@ -12,12 +18,12 @@
     }
   
     // crud methods
-    function fetchTodos(): {id: number, title: string, done: boolean}[] {
+    function fetchTodos(): todoType[] {
       const todos = fetchTodoItems();
       return todos;
     }
   
-    function addTodo(todo: {id: number, title: string, done: boolean}): void {
+    function addTodo(todo: todoType): void {
       todoItems.push(todo);
     }
   
@@ -25,17 +31,17 @@
       todoItems.splice(index, 1);
     }
   
-    function completeTodo(index: number, todo: {id: number, title: string, done: boolean}) {
+    function completeTodo(index: number, todo: todoType) {
       todo.done = true;
       todoItems.splice(index, 1, todo);
     }
   
     // business logic
-    function logFirstTodo(): {id: number, title: string, done: boolean} {
+    function logFirstTodo(): todoType {
       return todoItems[0];
     }
   
-    function showCompleted(): Array<{id: number, title: string, done: boolean}> {
+    function showCompleted(): Array<todoType> {
       return todoItems.filter((item) => item.done);
     }
   
