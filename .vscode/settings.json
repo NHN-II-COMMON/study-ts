@@ -49,5 +49,6 @@
       "iconColour": "white",
       "background": "gray"
     }
-  }
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }
