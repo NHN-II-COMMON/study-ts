@@ -36,6 +36,7 @@
     "dot-notation": "off",
     "no-console": false,
     "no-unused-variable": { "severity": "warning" },
+    "no-dupe-keys": "off",
   },
   "settings": {
     "react": {

@@ -1,41 +1,19 @@
 {
   "compilerOptions": {
-    "useDefineForClassFields": true,
+    "target": "ESNext",
     "module": "ESNext",
-    "skipLibCheck": true,
+    "lib": ["esnext"],
+    "noImplicitAny": true,
     "allowJs": true,
-    "strictNullChecks": true,
-
-    "lib": ["es6"],
-    "target": "es6",
-
-    /* Bundler mode */
-    "moduleResolution": "Node",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-
-    // true인 경우 모델 클래스의 기본값을 무조건 넣어야 해서. false로 설정
-    "strictPropertyInitialization": false,
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true,
-
-    "noImplicitAny": false,
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
-
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "Node",
     "outDir": "dist",
     "rootDir": "src",
-
     "preserveValueImports": false,
     "esModuleInterop": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  }
 }
