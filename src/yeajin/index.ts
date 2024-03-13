@@ -12,8 +12,8 @@
     }
   
     // crud methods
-    function fetchTodos(): object[] {
-    const todos: object[] = fetchTodoItems();
+    function fetchTodos(): { id: number, title: string, done: boolean }[] {
+    const todos: { id: number, title: string, done: boolean }[] = fetchTodoItems();
     return todos;
     }
   
@@ -31,7 +31,7 @@
     }
   
     // business logic
-    function logFirstTodo() : object {
+    function logFirstTodo() : {id: number, title: string, done: boolean} {
     return todoItems[0];
     }
   
