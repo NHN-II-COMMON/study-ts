@@ -50,8 +50,8 @@ export default function Word({word : w}){
             <td>{word.eng}</td>
             <td>{isShow && word.kor}</td>
             <td>
-                <button onClick={toggleShow()}>뜻 {isShow?'숨기기':'보기'}</button>
-                <button className="btn_del">삭제</button>
+                <button onClick={toggleShow}>뜻 {isShow?'숨기기':'보기'}</button>
+                <button  onClick={del} className="btn_del">삭제</button>
             </td>
         </tr>
     );
